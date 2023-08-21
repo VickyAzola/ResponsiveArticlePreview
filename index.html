@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- tailwind CSS--> 
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Frontend Mentor | Article preview component</title>
+</head>
+
+<body style="font-family: 'Manrope', sans-serif;" class="bg-[#ecf2f8] min-h-screen grid place-items-center">
+
+  <main class="bg-white rounded-xl shadow-xl mx-4 mb-10 grid grid-rows-5 md:grid-rows-1 md:grid-cols-5 max-w-xs md:max-w-3xl">
+
+    <div class="bg-cover bg-[url('images/drawers.jpg')] row-span-2 md:col-span-2 rounded-t-xl md:rounded-tr-none md:rounded-bl-xl h-[14rem] md:h-[19rem]"></div>
+
+    <div class="row-span-3 md:col-span-3">
+      <section class="px-8 pt-8">
+        <h1 class="text-[#48556a] text-lg md:text-xl md:font-bold leading-tight font-semibold">Shift the overall look and feel by adding these wonderful 
+          touches to furniture in your home</h1>
+        <p class="py-4 text-sm text-[#48556a]">Ever been in a room and felt like something was missing? Perhaps 
+          it felt slightly bare and uninviting. I’ve got some simple tips 
+          to help you make any room feel complete.</p>
+      </section>
+
+      <section class="relative">
+        <div id="Seccion-Compartir" class="flex items-center justify-between px-8 py-5 md:pt-2">
+          <div class="flex items-center gap-x-3">
+            <img class="rounded-full w-12" src="images/avatar-michelle.jpg" alt="Avatar de usuario"/>
+            <div>
+              <p class="text-sm text-[#48556a] font-bold">Michelle Appleton</p>
+              <p class="text-xs text-[#6d7f97]"> 28 Jun 2020</p>
+            </div>
+          </div>
+          <button type="submit" id="shere-btn1" aria-label="Share" class="aspect-square rounded-full w-9 bg-[#ecf2f8] hover:bg-[#48556a]">
+            <svg class="fill-[#6E8098] hover:fill-white mx-auto" xmlns="http://www.w3.org/2000/svg" width="15" height="13"><path d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/></svg>
+          </button>
+        </div>
+
+        <div id="redesSocialesMovile" class="hidden mt-3 flex items-center justify-between px-8 py-5 bg-[#48556a] rounded-b-xl">
+          <div class="flex items-center gap-x-4">
+            <p class="text-[#9eafc2] text-sm tracking-[.3rem]">SHARE</p>
+            <a href="https://es-la.facebook.com/" target="_blank" aria-label="Go to Facebook"><img src="images/icon-facebook.svg" alt="Facebook Icon"></a>
+            <a href="https://twitter.com/?lang=es" target="_blank" aria-label="Go to Twitter"><img src="images/icon-twitter.svg" alt="Twitter Icon"></a>
+            <a href="https://www.pinterest.cl/" target="_blank" aria-label="Go to Pinterest"><img src="images/icon-pinterest.svg" alt="Pinterest Icon"></a>
+          </div>
+          <button type="submit" id="shared-btn2" aria-label="Share" class="aspect-square rounded-full w-9 bg-[#6d7f97]">
+            <svg class="fill-white mx-auto" xmlns="http://www.w3.org/2000/svg" width="15" height="13"><path fill="" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/></svg>
+          </button>
+        </div>
+
+        <div class="hidden md:block">
+          <div id="redesSocialesPC" class="hidden">
+            <div class="absolute border-l-[1rem] border-l-transparent border-r-[1rem] border-r-transparent border-t-[1.5rem] border-t-[#48556a] right-[7.5%] bottom-[95%]">
+            </div>
+            <div class="absolute right-[-13%] top-[-90%] px-5 py-4 gap-x-5 flex items-center justify-between bg-[#48556a] rounded-xl">
+              <p class="text-[#9eafc2] text-sm tracking-[.3rem]">SHARE</p>
+              <a href="https://es-la.facebook.com/" target="_blank" aria-label="Go to Facebook"><img src="images/icon-facebook.svg" alt="Facebook Icon"></a>
+              <a href="https://twitter.com/?lang=es" target="_blank" aria-label="Go to Twitter"><img src="images/icon-twitter.svg" alt="Twitter Icon"></a>
+              <a href="https://www.pinterest.cl/" target="_blank" aria-label="Go to Pinterest"><img src="images/icon-pinterest.svg" alt="Pinterest Icon"></a>
+            </div>
+          </div>
+        </div>
+        </section>
+      </div>
+  </main>
+
+
+  <footer class="text-center text-xs py-2 fixed bottom-0">
+    Challenge by <a class="font-bold hover:text-blue-700" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a class="font-bold hover:text-blue-700" target="_blank" href="https://github.com/VickyAzola/ResponsiveArticlePreview">Victoria Azola</a>.
+  </footer>
+
+</body>
+<script src="index.js"></script>
+</html>
