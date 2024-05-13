@@ -1,29 +1,21 @@
 
-const share = document.getElementById("shere-btn1")
-const share2 = document.getElementById("shared-btn2")
-const seccionCompartir = document.getElementById("Seccion-Compartir")
-const redesMovile = document.getElementById("redesSocialesMovile")
-const redesPC = document.getElementById("redesSocialesPC")
+const buttonShare = document.getElementById("share-btn")
+const buttonShare2 = document.getElementById("shere-btn-2")
+const redesSociales = document.getElementById("redesSociales")
 
-const mediaQuery = window.matchMedia("(min-width:768px)") 
 
-if (mediaQuery.matches) {
-    share.addEventListener("click", () => {
-        if (redesPC.classList != "hidden") {
-            redesPC.classList.add("hidden");
-        } else {
-            redesPC.classList.remove("hidden");
-        }
+buttonShare.addEventListener("click", () => {
+    redesSociales.classList.toggle("hidden");
+    
+    if (!redesSociales.classList.contains("hidden")) {
+        buttonShare.classList.add("active");
+    } else {
+        buttonShare.classList.remove("active");
+    }
 })
 
-} else {
-    share.addEventListener("click", () => {
-        redesMovile.classList.remove("hidden");
-        seccionCompartir.style.display = "none";
-    })
-    share2.addEventListener("click", () => {
-        seccionCompartir.style.display = "flex";
-        redesMovile.classList.add("hidden");
-    })
-}
+buttonShare2.addEventListener("click", () => {
+    redesSociales.classList.toggle("hidden");
+    buttonShare.classList.remove("active");
+})
 
